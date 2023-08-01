@@ -14,7 +14,7 @@ useEffect(()=>{
 	auth.onAuthStateChanged(user=>{
 		setUser(user);
 		setLoading(false);
-		if (user) navigate("/chat-app/chats")
+		if (user) navigate("/chats")
 
 	})
 },[user,navigate])

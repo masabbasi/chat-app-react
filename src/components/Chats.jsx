@@ -17,7 +17,7 @@ const Chats = () => {
 
   useEffect(() => {
     if (!user) {
-      navigate("/chat-app");
+      navigate("/");
       return;
     }
 
@@ -56,7 +56,7 @@ const Chats = () => {
 
   const logOutHandler = async () => {
     await auth.signOut();
-    navigate("/chat-app/");
+    navigate("/");
   };
 
   if (!user || loading) return "Loading...";
